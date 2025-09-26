@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Shiksha Suraksha</title>
+    
+    <!-- Favicon with eye icon matching navbar -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzYgNTEyIj48cGF0aCBmaWxsPSIjMDA3YmZmIiBkPSJNMjg4IDgwYy0zNSAwLTY3IDEzLTkyIDM2cy00MSA1Ny00MSA5MmMwIDM1IDEzIDY3IDQxIDkyIDIzIDIzIDU3IDM2IDkyIDM2czY3LTEzIDkyLTM2YzI4LTI1IDQxLTU3IDQxLTkyIDAtMzUtMTMtNjktNDEtOTJzLTU3LTM2LTkyLTM2em0wIDY0YzE3IDAgMzIgNyA0NCAyMHM5IDI3IDkgNDQtNyAzMi0yMCA0My0yNyAxMC00NCAxMC0zMS03LTQ0LTIwLTEwLTI3LTEwLTQ0IDctMzEgMjAtNDMgMjctMTAgNDQtMTB6bTAgMzQ0Yy04My0xLTE3Ni00Ny0yNzMtMTMzUzAzIDIzMCAwIDIwOGMzLTIyIDQ4LTEwMCAxNDQtMTg2czE5MC0xMzMgMjczLTEzMyAxNzYgNDcgMjcyIDEzM1M1NzYgMjMwIDU3NiAyMDhjLTMgMjItNDggMTAwLTE0MyAxODZTMzcxIDUyOCAyODggNTI4eiIvPjwvc3ZnPg==">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-overlay">
+        <div class="spinner">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate-brand" href="#" data-aos="fade-right">
+                <i class="fas fa-eye me-2"></i>
+                <span class="brand-text">Shiksha Suraksha</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#monitoring">Monitoring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analytics">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2 px-3" href="#dashboard">
+                            <i class="fas fa-tachometer-alt me-1"></i>Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-particles"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="text-primary">Intelligent</span><br>
+                            Classroom<br>
+                            <span class="typing-text">Monitoring System</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Revolutionizing skill development training through AI-powered classroom analysis 
+                            for the Ministry of Social Justice and Empowerment
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#features" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Get Started
+                            </a>
+                            <a href="#monitoring" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-play-circle me-2"></i>Watch Demo
+                            </a>
+                        </div>
+                        <div class="hero-stats mt-4">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="500">0</span>
+                                <span class="stat-label">Institutions Monitored</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="10000">0</span>
+                                <span class="stat-label">Students Impacted</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="95">0</span>
+                                <span class="stat-label">% Accuracy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="hero-image">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-camera text-primary"></i>
+                            <span>Real-time Analysis</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-chart-line text-success"></i>
+                            <span>Performance Metrics</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-bell text-warning"></i>
+                            <span>Alert System</span>
+                        </div>
+                        <div class="hero-illustration">
+                            <i class="fas fa-chalkboard-teacher hero-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Powerful Features</h2>
+                    <p class="section-subtitle">Advanced AI-powered tools for comprehensive classroom monitoring</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Image Analysis</h3>
+                        <p>Advanced computer vision algorithms analyze classroom images to identify activities, engagement levels, and training quality indicators.</p>
+                        <div class="feature-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Real-time Analytics</h3>
+                        <p>Comprehensive dashboards provide instant insights into training effectiveness, student analysis, and institutional performance.</p>
+                        <div class="feature-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Smart Alerting</h3>
+                        <p>Automated flagging system identifies institutions requiring enhanced monitoring or immediate intervention.</p>
+                        <div class="feature-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Student Analysis</h3>
+                        <p>Monitor student participation, attention levels, and interactive learning activities through visual analysis.</p>
+                        <div class="feature-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Curriculum Assessment</h3>
+                        <p>Evaluate training content relevance and quality based on observed classroom activities and interactions.</p>
+                        <div class="feature-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Quality Assurance</h3>
+                        <p>Ensure training standards compliance and identify institutions that need support or corrective measures.</p>
+                        <div class="feature-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring Dashboard Section -->
+    <section id="monitoring" class="monitoring-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Live Monitoring Dashboard</h2>
+                    <p class="section-subtitle">Real-time insights into classroom activities and training effectiveness</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="monitoring-panel">
+                        <div class="panel-header">
+                            <h4><i class="fas fa-video me-2"></i>Live Classroom Feed</h4>
+                            <div class="status-indicator online">
+                                <span class="status-dot"></span>
+                                Live
+                            </div>
+                        </div>
+                        <div class="image-analysis-container">
+                            <div class="classroom-preview">
+                                <i class="fas fa-chalkboard-teacher classroom-icon"></i>
+                                <p>AI-Powered Image Analysis Active</p>
+                            </div>
+                            <div class="analysis-overlay">
+                                <div class="detection-box student-engagement">
+                                    <span>Student Analysis: 85%</span>
+                                </div>
+                                <div class="detection-box instructor-activity">
+                                    <span>Instructor Activity: Teaching</span>
+                                </div>
+                                <div class="detection-box training-quality">
+                                    <span>Training Quality: Good</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="metrics-panel">
+                        <h4><i class="fas fa-chart-pie me-2"></i>Key Metrics</h4>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span>Overall Performance</span>
+                                <span class="metric-value good">87%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span>Student Attention</span>
+                                <span class="metric-value warning">72%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span>Content Relevance</span>
+                                <span class="metric-value good">91%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-header">
+                                <span>Infrastructure</span>
+                                <span class="metric-value excellent">95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Advanced Analytics</h2>
+                    <p class="section-subtitle">Comprehensive insights for data-driven decision making</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="analytics-card">
+                        <div class="card-header">
+                            <h4><i class="fas fa-flag-checkered me-2"></i>Performance Flags</h4>
+                        </div>
+                        <div class="flag-list">
+                            <div class="flag-item critical">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <div class="flag-content">
+                                    <strong>Critical: Institution ID #234</strong>
+                                    <p>Low engagement detected. Immediate intervention required.</p>
+                                </div>
+                                <span class="flag-time">2 hours ago</span>
+                            </div>
+                            <div class="flag-item warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div class="flag-content">
+                                    <strong>Warning: Institution ID #156</strong>
+                                    <p>Declining training quality. Enhanced monitoring needed.</p>
+                                </div>
+                                <span class="flag-time">5 hours ago</span>
+                            </div>
+                            <div class="flag-item info">
+                                <i class="fas fa-info-circle"></i>
+                                <div class="flag-content">
+                                    <strong>Info: Institution ID #089</strong>
+                                    <p>Excellent performance. Consider as best practice example.</p>
+                                </div>
+                                <span class="flag-time">1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="analytics-card">
+                        <div class="card-header">
+                            <h4><i class="fas fa-chart-line me-2"></i>Trend Analysis</h4>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="trendChart" width="400" height="200"></canvas>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-color bg-primary"></span>
+                                <span>Student Analysis</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color bg-success"></span>
+                                <span>Training Quality</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color bg-warning"></span>
+                                <span>Infrastructure Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Contact us for support or more information about the monitoring system</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone Support</h4>
+                        <p>+91-11-2338-7054</p>
+                        <p>Available 24/7</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Support</h4>
+                        <p>support@msje.gov.in</p>
+                        <p>Response within 24 hours</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Office Address</h4>
+                        <p>Shastri Bhawan, New Delhi</p>
+                        <p>Ministry of Social Justice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <i class="fas fa-eye me-2"></i>
+                        <strong>Shiksha Suraksha</strong>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p>&copy; 2025 Government of India. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
